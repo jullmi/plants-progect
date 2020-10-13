@@ -1,0 +1,553 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.6;
+
+    background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+/* Адаптивная верстка - сетка */
+@media (max-width: 1400px) {
+    .container {max-width:1149px}
+}
+@media (max-width:992px) {
+    .container {max-width:750px }
+}
+@media (max-width: 767px) {
+    .container {max-width: none}
+}
+
+/* Звездочка означает все элементы страницы, before и after это псевдоэлементы чтобы вставить текст перед или после элемента*/
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+/* Стилизация шапки header*/
+.header{
+    width: 100%;
+
+}
+
+
+
+.big_background {
+    width: 100%;
+}
+
+/*container*/
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+/*Стиль для верхнего блока с навигацией*/
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Стиль для логотипа*/
+.header_logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #311914;
+    font-family: 'Nothing You Could Do', cursive;
+    text-decoration: none;
+
+}
+/*Стиль для блока с навигацией*/
+.nav {
+    font-size: 18px;
+    font-weight: lighter;
+    color: black;
+    text-transform: lowercase;
+}
+
+/*Стиль для ссылок навигации*/
+.nav_link {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+/*Подчеркивание навигационного меню*/
+.nav_link::after{
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #311914;
+    opacity: 0;
+
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover::after{
+    color: #311914;
+    opacity: 1;
+}
+
+/*Смена цвета ссылок*/
+.nav_link:hover {
+    color: #311914;
+}
+
+/*Блок вступления (intro)*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:65vh;
+    background: url("plants-progect/images/intro.jpg") center no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    margin-top: 120px;
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-suptitle {
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    letter-spacing:10px;
+}
+
+.intro-title {
+    font-size: 45px;
+    font-weight: 400;
+    color: white;
+    margin: 55px auto 25px;
+}
+
+.intro-subtitle {
+    display: inline-block;
+    position: relative;
+    font-size: large;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+
+}
+
+.intro-subtitle::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+
+}
+
+/*Section*/
+
+.section {
+    padding: 80px 0 0;
+}
+.section_header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+
+}
+
+.section_suptitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #311914;
+    font-family: 'Nothing You Could Do', cursive;
+    margin: 0 auto;
+
+}
+
+.section_title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #311914;
+}
+
+.section_title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #311914;
+    margin: 30px auto;
+
+}
+
+.section_text {
+    color: #311914;
+}
+
+
+/*Ecology*/
+
+.ecology {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ecology_item {
+    width: 30%;
+}
+
+.ecology_item:hover {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.ecology_item {
+    transition: transform .2s linear;
+}
+
+.ecology_image:hover{
+    opacity: .6;
+
+}
+
+/* Minimalism*/
+
+.minimalism_blok {
+    width: 100%;
+    height: 60vh;
+    background: url("plants-progect/images/minimalism/mb.jpg") center no-repeat;
+    text-align: center;
+
+}
+
+
+.minimalism_button {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Nothing You Could Do', cursive;
+    color: #311914;
+    text-decoration: none;
+    margin-top: 350px;
+
+
+}
+
+.minimalism_button::after {
+    position: relative;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin-top: 0;
+
+    opacity: 0;
+
+    transition: opacity .3s linear, color .3s linear;
+
+}
+
+
+.minimalism_button:hover {
+    color: white;
+}
+
+.minimalism_button:hover::after {
+    opacity: 1;
+
+}
+
+/*Travel*/
+
+.travel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.travel_image {
+    width: 50%;
+    opacity: 1;
+    padding: 0 40px;
+
+
+    transition: .3s linear;
+}
+
+.travel_image:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+
+/*About Project*/
+
+.project {
+    width: 100%;
+    height: 75vh;
+
+    background: url("plants-progect/images/project.jpg") center no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    margin-bottom: 70px;
+
+}
+
+.project {
+
+    opacity: 0.8;
+}
+
+.project_text {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    text-align: center;
+    padding-top: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    z-index: 10;
+
+
+    transition: opacity 0.6s linear;
+
+
+}
+
+
+.project:hover {
+
+}
+
+.project_text:hover {
+    opacity: 1;
+
+}
+
+
+
+/*Instagram*/
+
+
+.instagram {
+    display: flex;
+    text-decoration: none;
+
+}
+
+.instagram_item {
+    width: 50%;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.instagram_image {
+    opacity: 1;
+
+    transition: opacity .3s linear;
+}
+
+
+.instagram_image:hover {
+    opacity: .6;
+}
+
+.instagram_title {
+    font-size: 30px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+    color: #311914;
+    padding: 140px 0 0;
+    margin: 0 auto;
+}
+
+
+.instagram_text {
+    font-size: 17px;
+}
+
+.icon_inst {
+    padding: 15px;
+    opacity: 1;
+
+    transition: opacity .3s linear;
+}
+
+.icon_youtube {
+    padding: 15px;
+    opacity: 1;
+
+    transition: opacity .3s linear;
+
+}
+
+.icon_inst:hover {
+    opacity: .6;
+}
+
+.icon_youtube:hover {
+    opacity: .6;
+}
+
+
+
+
+/*Вторая Страница - О проекте!!!!!!*/
+
+
+.header_about {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #311914;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+
+.about_paragraph {
+    text-indent: 7%;
+
+}
+
+.about_item {
+    width: 50%;
+}
+
+
+.about_title {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section_footer{
+
+}
+
+
+.section_footer::before {
+    display: block;
+    content: "";
+    background-color: #311914;
+    opacity: 0.5;
+    width: 100%;
+    height: 2px;
+    margin: 40px auto;
+}
+
+
+.footer_text {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+/*Вторая страница подчеркивание ссылок!!!!!*/
+
+.instagram_link {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-weight: bold;
+
+}
+
+
+.youtube_link {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
+/* Страница связаться*/
+
+.connection_title {
+    padding-top: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.connection_header {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.connection_title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: darkolivegreen;
+    margin: 0 0;
+}
+
+.connection_picture{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.feedback {
+    background-color: darkolivegreen;
+}
