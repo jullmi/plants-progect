@@ -1,2 +1,3 @@
 # plants-progect
-сайт о комнатных растениях
+This site about home plants
+
