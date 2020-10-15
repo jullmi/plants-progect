@@ -550,4 +550,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .feedback {
     background-color: darkolivegreen;
+    margin: 0 auto;
 }
+ input {
+     width: 360px;
+     height: 40px;
+     font-size: 20px;
+ }
+
