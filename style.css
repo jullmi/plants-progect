@@ -439,7 +439,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 40px;
     font-weight: bold;
-    color: #311914;
+    color: darkolivegreen;
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -482,7 +482,7 @@ h1,h2,h3,h4,h5,h6 {
 .section_footer::before {
     display: block;
     content: "";
-    background-color: #311914;
+    background-color: darkolivegreen;
     opacity: 0.5;
     width: 100%;
     height: 2px;
@@ -499,15 +499,15 @@ h1,h2,h3,h4,h5,h6 {
 .footer_icon {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
+
 /*Вторая страница подчеркивание ссылок!!!!!*/
 
 .instagram_link {
     text-decoration: none;
     color: darkolivegreen;
     font-weight: bold;
-
 }
 
 
@@ -552,9 +552,55 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darkolivegreen;
     margin: 0 auto;
 }
+
+
+.form_inputs {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 15px;
+    text-align: center;
+}
+
  input {
-     width: 360px;
+     width: 50%;
      height: 40px;
      font-size: 20px;
+     margin-bottom: 0;
+     display: inline-block;
+     text-transform: uppercase;
+     font-family: 'Nothing You Could Do', cursive;
+
  }
 
+ textarea {
+     width: 50%;
+     height: 160px;
+
+ }
+
+ input,textarea {
+     border: black solid 1px;
+ }
+
+
+ .text_form {
+     font-size: 15px;
+     margin: 30px 0 0 0;
+
+ }
+
+ .red {
+     color: brown;
+ }
+
+.button_form {
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    margin: 15px 0;
+    padding: 0;
+
+}
