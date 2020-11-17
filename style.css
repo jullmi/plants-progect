@@ -1,9 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: black;
     line-height: 1.6;
     margin: 0;
+    background: whitesmoke;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -58,6 +59,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #311914;
     font-family: 'Nothing You Could Do', cursive;
     text-decoration: none;
+    padding-left: 40px;
 
 }
 /*Стиль для блока с навигацией*/
@@ -74,7 +76,7 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
     vertical-align: top;
     margin: 0 15px;
-    color: black;
+    color: #311914;
     text-decoration: none;
 
     transition: color .1s linear;
@@ -108,40 +110,18 @@ h1,h2,h3,h4,h5,h6 {
     background: url("images/home.jpg")center no-repeat;
     width: 100%;
     margin-top: 120px;
-    height: 58vh;
+    height: 59vh;
     background-attachment: fixed;
-
-
-
 }
 
-
-
-
-
-.intro-suptitle {
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    letter-spacing:10px;
-    text-align: center;
-
-}
-
-.intro-title {
+.intro_text {
     font-size: 20px;
     font-weight: normal;
     color: white;
-    margin-top: 70px;
-
-
-}
-
-.intro-subtitle {
-    font-size: large;
-    font-weight: normal;
-    color: white;
-    text-align: center;
+    letter-spacing: 13px;
+    text-align: right;
+    padding-top: 50vh;
+    padding-right: 10vh;
 }
 
 
@@ -188,42 +168,50 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/*Ecology*/
+/*Write*/
 
-.ecology {
+.write {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.ecology_item {
-    width: 30%;
+.write_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ecology_item:hover {
+.write_image {
+    display: block;
+}
+
+
+.write_item:hover {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.ecology_item {
+.write_item {
     transition: transform .2s linear;
 }
 
-.ecology_image:hover{
+.write_image:hover{
     opacity: .6;
-
 }
 
-/* Minimalism*/
+/* Tell*/
 
-.minimalism_blok {
+.tell_blok {
     width: 100%;
-    height: 60vh;
-    background: saddlebrown;
+    height: 65vh;
+    background: url("images/tell/tell.jpg");
+
     text-align: center;
 
 }
 
 
-.minimalism_button {
+.tell_button {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -238,7 +226,7 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-.minimalism_button::after {
+.tell_button::after {
     position: relative;
     display: block;
     content: "";
@@ -254,25 +242,25 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-.minimalism_button:hover {
+.tell_button:hover {
     color: white;
 }
 
-.minimalism_button:hover::after {
+.tell_button:hover::after {
     opacity: 1;
 
 }
 
-/*Travel*/
+/*Live*/
 
-.travel {
+.live {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
 }
 
-.travel_image {
+.live_image {
     width: 50%;
     opacity: 1;
     padding: 0 40px;
@@ -281,11 +269,29 @@ h1,h2,h3,h4,h5,h6 {
     transition: .3s linear;
 }
 
-.travel_image:hover {
+.live_image:hover {
     opacity: .6;
     transform: scale(1.1);
 }
 
+
+.hello {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+
+.hello_item {
+    width: 33%;
+    position: relative;
+}
+
+.hello_text {
+    color: white;
+    position: absolute;
+}
 
 /*About Project*/
 
@@ -293,7 +299,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     height: 75vh;
 
-    background: url("plants-progect/images/project.jpg") center no-repeat;
+    background: firebrick center no-repeat;
     background-position: top;
     background-size: cover;
 
