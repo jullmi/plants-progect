@@ -36,6 +36,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+/*Первая страница*/
+
 /*Стиль для верхнего блока с навигацией*/
 .header {
     width: 100%;
@@ -151,6 +153,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 30px;
     font-weight: bold;
     color: #311914;
+
 }
 
 .section_title::after {
@@ -275,6 +278,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
+
+/*Hello*/
+
+
 .hello {
     display: flex;
     justify-content: space-between;
@@ -288,10 +295,97 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
 }
 
-.hello_text {
+
+.hello_item h3 {
     color: white;
     position: absolute;
+    left: 0;
+    bottom: 75%;
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding: 12px;
+
 }
+
+
+/*Instagram*/
+
+
+.instagram {
+    display: flex;
+    text-decoration: none;
+    margin: 80px 0px;
+
+}
+
+
+.instagram_item {
+    width: 50%;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.instagram_image {
+    opacity: 1;
+
+    transition: opacity .3s linear;
+}
+
+
+.instagram_image:hover {
+    opacity: .6;
+}
+
+.instagram_title {
+    font-size: 30px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+    color: #311914;
+    padding: 140px 0 0;
+    margin: 0 auto;
+}
+
+
+.instagram_text {
+    font-size: 17px;
+    padding: 12px;
+}
+
+.icon_inst {
+    padding: 15px;
+    opacity: 1;
+
+    transition: opacity .3s linear;
+}
+
+.icon_youtube {
+    padding: 15px;
+    opacity: 1;
+
+    transition: opacity .3s linear;
+
+}
+
+.icon_inst:hover {
+    opacity: .6;
+}
+
+.icon_youtube:hover {
+    opacity: .6;
+}
+
+
+
+
+
+
 
 /*About Project*/
 
@@ -342,72 +436,6 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-/*Instagram*/
-
-
-.instagram {
-    display: flex;
-    text-decoration: none;
-
-}
-
-.instagram_item {
-    width: 50%;
-    text-align: center;
-}
-
-.link {
-    text-decoration: none;
-}
-
-
-.instagram_image {
-    opacity: 1;
-
-    transition: opacity .3s linear;
-}
-
-
-.instagram_image:hover {
-    opacity: .6;
-}
-
-.instagram_title {
-    font-size: 30px;
-    font-family: 'Nothing You Could Do', cursive;
-    font-weight: bold;
-    color: #311914;
-    padding: 140px 0 0;
-    margin: 0 auto;
-}
-
-
-.instagram_text {
-    font-size: 17px;
-}
-
-.icon_inst {
-    padding: 15px;
-    opacity: 1;
-
-    transition: opacity .3s linear;
-}
-
-.icon_youtube {
-    padding: 15px;
-    opacity: 1;
-
-    transition: opacity .3s linear;
-
-}
-
-.icon_inst:hover {
-    opacity: .6;
-}
-
-.icon_youtube:hover {
-    opacity: .6;
-}
 
 
 
