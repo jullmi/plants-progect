@@ -1,11 +1,10 @@
 body {
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     color: black;
     line-height: 1.6;
-
-    background-color: white;
+    margin: 0;
+    background: whitesmoke;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -13,15 +12,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* Адаптивная верстка - сетка */
-@media (max-width: 1400px) {
-    .container {max-width:1149px}
-}
-@media (max-width:992px) {
-    .container {max-width:750px }
-}
-@media (max-width: 767px) {
-    .container {max-width: none}
-}
+
+
+
 
 /* Звездочка означает все элементы страницы, before и after это псевдоэлементы чтобы вставить текст перед или после элемента*/
 *,
@@ -36,17 +29,14 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-
-
-.big_background {
-    width: 100%;
-}
-
 /*container*/
 .container {
-    width: 1250px;
+    width: 1440px;
     margin: 0 auto;
 }
+
+
+/*Первая страница*/
 
 /*Стиль для верхнего блока с навигацией*/
 .header {
@@ -71,6 +61,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #311914;
     font-family: 'Nothing You Could Do', cursive;
     text-decoration: none;
+    padding-left: 40px;
 
 }
 /*Стиль для блока с навигацией*/
@@ -87,7 +78,7 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
     vertical-align: top;
     margin: 0 15px;
-    color: black;
+    color: #311914;
     text-decoration: none;
 
     transition: color .1s linear;
@@ -100,7 +91,7 @@ h1,h2,h3,h4,h5,h6 {
     content: "";
     width: 100%;
     height: 2px;
-    background-color: #311914;
+    background-color: darkolivegreen;
     opacity: 0;
 
     transition: opacity .1s linear;
@@ -118,58 +109,23 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Блок вступления (intro)*/
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: url("images/home.jpg")center no-repeat;
     width: 100%;
-    height:65vh;
-    background: url("plants-progect/images/intro.jpg") center no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
     margin-top: 120px;
+    height: 59vh;
+    background-attachment: fixed;
 }
 
-.intro_inner{
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.intro-suptitle {
-    font-size: 15px;
+.intro_text {
+    font-size: 20px;
     font-weight: normal;
     color: white;
-    letter-spacing:10px;
+    letter-spacing: 13px;
+    text-align: right;
+    padding-top: 50vh;
+    padding-right: 10vh;
 }
 
-.intro-title {
-    font-size: 45px;
-    font-weight: 400;
-    color: white;
-    margin: 55px auto 25px;
-}
-
-.intro-subtitle {
-    display: inline-block;
-    position: relative;
-    font-size: large;
-    font-weight: normal;
-    color: white;
-    text-align: center;
-
-}
-
-.intro-subtitle::after {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: white;
-
-}
 
 /*Section*/
 
@@ -197,6 +153,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 30px;
     font-weight: bold;
     color: #311914;
+
 }
 
 .section_title::after {
@@ -214,42 +171,50 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/*Ecology*/
+/*Write*/
 
-.ecology {
+.write {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.ecology_item {
-    width: 30%;
+.write_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ecology_item:hover {
+.write_image {
+    display: block;
+}
+
+
+.write_item:hover {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.ecology_item {
+.write_item {
     transition: transform .2s linear;
 }
 
-.ecology_image:hover{
+.write_image:hover{
     opacity: .6;
-
 }
 
-/* Minimalism*/
+/* Tell*/
 
-.minimalism_blok {
+.tell_blok {
     width: 100%;
-    height: 60vh;
-    background: url("plants-progect/images/minimalism/mb.jpg") center no-repeat;
+    height: 65vh;
+    background: url("images/tell/tell.jpg");
+
     text-align: center;
 
 }
 
 
-.minimalism_button {
+.tell_button {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -264,7 +229,7 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-.minimalism_button::after {
+.tell_button::after {
     position: relative;
     display: block;
     content: "";
@@ -280,25 +245,25 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-.minimalism_button:hover {
+.tell_button:hover {
     color: white;
 }
 
-.minimalism_button:hover::after {
+.tell_button:hover::after {
     opacity: 1;
 
 }
 
-/*Travel*/
+/*Live*/
 
-.travel {
+.live {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
 }
 
-.travel_image {
+.live_image {
     width: 50%;
     opacity: 1;
     padding: 0 40px;
@@ -307,10 +272,119 @@ h1,h2,h3,h4,h5,h6 {
     transition: .3s linear;
 }
 
-.travel_image:hover {
+.live_image:hover {
     opacity: .6;
     transform: scale(1.1);
 }
+
+
+
+/*Hello*/
+
+
+.hello {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+
+.hello_item {
+    width: 33%;
+    position: relative;
+}
+
+
+.hello_item h3 {
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 75%;
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding: 12px;
+
+}
+
+
+/*Instagram*/
+
+
+.instagram {
+    display: flex;
+    text-decoration: none;
+    margin: 80px 0px;
+
+}
+
+
+.instagram_item {
+    width: 50%;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+.instagram_image {
+    opacity: 1;
+
+    transition: opacity .3s linear;
+}
+
+
+.instagram_image:hover {
+    opacity: .6;
+}
+
+.instagram_title {
+    font-size: 30px;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: bold;
+    color: #311914;
+    padding: 140px 0 0;
+    margin: 0 auto;
+}
+
+
+.instagram_text {
+    font-size: 17px;
+    padding: 12px;
+}
+
+.icon_inst {
+    padding: 15px;
+    opacity: 1;
+
+    transition: opacity .3s linear;
+}
+
+.icon_youtube {
+    padding: 15px;
+    opacity: 1;
+
+    transition: opacity .3s linear;
+
+}
+
+.icon_inst:hover {
+    opacity: .6;
+}
+
+.icon_youtube:hover {
+    opacity: .6;
+}
+
+
+
+
+
 
 
 /*About Project*/
@@ -319,7 +393,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     height: 75vh;
 
-    background: url("plants-progect/images/project.jpg") center no-repeat;
+    background: firebrick center no-repeat;
     background-position: top;
     background-size: cover;
 
@@ -362,72 +436,6 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-/*Instagram*/
-
-
-.instagram {
-    display: flex;
-    text-decoration: none;
-
-}
-
-.instagram_item {
-    width: 50%;
-    text-align: center;
-}
-
-.link {
-    text-decoration: none;
-}
-
-
-.instagram_image {
-    opacity: 1;
-
-    transition: opacity .3s linear;
-}
-
-
-.instagram_image:hover {
-    opacity: .6;
-}
-
-.instagram_title {
-    font-size: 30px;
-    font-family: 'Nothing You Could Do', cursive;
-    font-weight: bold;
-    color: #311914;
-    padding: 140px 0 0;
-    margin: 0 auto;
-}
-
-
-.instagram_text {
-    font-size: 17px;
-}
-
-.icon_inst {
-    padding: 15px;
-    opacity: 1;
-
-    transition: opacity .3s linear;
-}
-
-.icon_youtube {
-    padding: 15px;
-    opacity: 1;
-
-    transition: opacity .3s linear;
-
-}
-
-.icon_inst:hover {
-    opacity: .6;
-}
-
-.icon_youtube:hover {
-    opacity: .6;
-}
 
 
 
@@ -439,7 +447,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Nothing You Could Do', cursive;
     font-size: 40px;
     font-weight: bold;
-    color: #311914;
+    color: darkolivegreen;
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -453,6 +461,7 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     padding-top: 100px;
     margin: 0 auto;
+
 }
 
 
@@ -474,15 +483,11 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
-.section_footer{
-
-}
-
 
 .section_footer::before {
     display: block;
     content: "";
-    background-color: #311914;
+    background-color: darkolivegreen;
     opacity: 0.5;
     width: 100%;
     height: 2px;
@@ -499,15 +504,15 @@ h1,h2,h3,h4,h5,h6 {
 .footer_icon {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
+
 /*Вторая страница подчеркивание ссылок!!!!!*/
 
 .instagram_link {
     text-decoration: none;
     color: darkolivegreen;
     font-weight: bold;
-
 }
 
 
@@ -527,9 +532,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .connection_header {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     text-align: center;
+    margin: 40px;
 }
 
 .connection_title::after {
@@ -550,4 +556,112 @@ h1,h2,h3,h4,h5,h6 {
 
 .feedback {
     background-color: darkolivegreen;
+    margin: 0 auto;
+}
+
+
+/* Форма обратной связзи */
+
+.form_inputs {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 15px;
+    text-align: center;
+}
+
+ input {
+     width: 50%;
+     height: 40px;
+     font-size: 20px;
+     margin-bottom: 0;
+     display: inline-block;
+     text-transform: uppercase;
+     font-family: 'Nothing You Could Do', cursive;
+
+ }
+
+ textarea {
+     width: 50%;
+     height: 160px;
+
+ }
+
+ input,textarea {
+     border: black solid 1px;
+ }
+
+
+ .text_form {
+     font-size: 15px;
+     margin: 30px 0 0 0;
+
+ }
+
+ .red {
+     color: brown;
+ }
+
+.button_form {
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+    margin: 15px 0;
+    padding: 0;
+
+}
+
+/* Блок Истории моих растений */
+
+.header_history {
+    padding-top: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.history {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history_item {
+    margin: 0 auto;
+    padding: 0 0 50px;
+    width: 40%;
+}
+
+.history_header {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.history_header::after {
+    display: block;
+    content:"";
+    height: 2px;
+    width: 100%;
+    margin:0;
+    background-color: darkolivegreen;
+
+}
+
+.my_history_header {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+
+.my_history {
+    display: flex;
+    justify-content: space-between;
+}
+
+.figure {
+    margin-top: 40px;
 }
