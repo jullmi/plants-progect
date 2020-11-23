@@ -53,7 +53,10 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
 }
+
 /*Стиль для логотипа*/
 .header_logo {
     font-size: 40px;
@@ -61,7 +64,6 @@ h1,h2,h3,h4,h5,h6 {
     color: #311914;
     font-family: 'Nothing You Could Do', cursive;
     text-decoration: none;
-    padding-left: 40px;
 
 }
 /*Стиль для блока с навигацией*/
@@ -385,104 +387,93 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-
-
-/*About Project*/
-
-.project {
-    width: 100%;
-    height: 75vh;
-
-    background: firebrick center no-repeat;
-    background-position: top;
-    background-size: cover;
-
-    margin-bottom: 70px;
-
-}
-
-.project {
-
-    opacity: 0.8;
-}
-
-.project_text {
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0;
-    text-align: center;
-    padding-top: 120px;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: white;
-    z-index: 10;
-
-
-    transition: opacity 0.6s linear;
-
-
-}
-
-
-.project:hover {
-
-}
-
-.project_text:hover {
-    opacity: 1;
-
-}
-
-
-
-
-
-
-
 /*Вторая Страница - О проекте!!!!!!*/
-
-
-.header_about {
-    font-family: 'Nothing You Could Do', cursive;
-    font-size: 40px;
-    font-weight: bold;
-    color: darkolivegreen;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-
-}
-
 
 .about {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 100px;
+    align-items: flex-start;
     margin: 0 auto;
 
 }
 
+.about_before {
+    border: none;
+    width: 100%;
+    height: 2px;
+    background-color: darkolivegreen;
+    margin-top: 100px;
+    opacity: 0.5;
 
-.about_paragraph {
-    text-indent: 7%;
+
 
 }
 
+.about_header {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px;
+}
+
+
+
+.about_paragraph {
+    text-indent: 0%;
+    display: inline-block;
+    text-align: left;
+
+}
+
+
+
 .about_item {
     width: 50%;
+}
+
+.about_item:first-child {
+    padding-top: 40px;
+}
+
+.about_img {
+    display: flex;
+    justify-content: center;
+}
+
+
+.about_img img {
+    display: block;
+}
+
+
+.about_text {
+    padding-right: 60px;
+    display: inline-block;
+    text-align: center;
+    text-indent: 0;
+
 }
 
 
 .about_title {
     font-size: medium;
     font-weight: bold;
-    margin-bottom: 40px;
     margin-top: 40px;
     text-align: center;
 }
 
+.about_progects {
+    display: block;
+    width: 100%;
+}
+
+.about_text_progects {
+    display: inline-block;
+    text-indent: 0;
+    width: 100%;
+    padding-left: 105px;
+}
 
 .section_footer::before {
     display: block;
@@ -499,6 +490,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-size: 12px;
     margin-bottom: 20px;
+
 }
 
 .footer_icon {
@@ -522,7 +514,8 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
 }
 
-/* Страница связаться*/
+
+/* Страница сconnection*/
 
 .connection_title {
     padding-top: 100px;
@@ -535,7 +528,8 @@ h1,h2,h3,h4,h5,h6 {
     font-size: xx-large;
     font-weight: bold;
     text-align: center;
-    margin: 40px;
+    margin: 20px;
+
 }
 
 .connection_title::after {
@@ -545,17 +539,17 @@ h1,h2,h3,h4,h5,h6 {
     height: 2px;
     background-color: darkolivegreen;
     margin: 0 0;
+    opacity: 0.5;
 }
 
 .connection_picture{
     display: flex;
     justify-content: space-between;
-    padding-top: 100px;
     padding-bottom: 100px;
+    padding-top: 30px;
 }
 
 .feedback {
-    background-color: darkolivegreen;
     margin: 0 auto;
 }
 
@@ -570,6 +564,11 @@ h1,h2,h3,h4,h5,h6 {
     align-items: flex-end;
     font-size: 15px;
     text-align: center;
+    padding-right: 50px;
+}
+
+.contact_form {
+    background: url("images/connection/feedback.jpg") center no-repeat;
 }
 
  input {
@@ -578,7 +577,7 @@ h1,h2,h3,h4,h5,h6 {
      font-size: 20px;
      margin-bottom: 0;
      display: inline-block;
-     text-transform: uppercase;
+     text-transform: lowercase;
      font-family: 'Nothing You Could Do', cursive;
 
  }
@@ -590,30 +589,38 @@ h1,h2,h3,h4,h5,h6 {
  }
 
  input,textarea {
-     border: black solid 1px;
+     border: darkolivegreen solid 1px;
  }
 
 
  .text_form {
      font-size: 15px;
      margin: 30px 0 0 0;
-
+     color: white;
+     font-weight: bold;
+     display: inline-block;
+     text-align: left;
+     width: 50%;
  }
 
  .red {
-     color: brown;
+     color: darkolivegreen;
  }
 
 .button_form {
     display: flex;
     justify-content: flex-end;
-    width: 250px;
     margin: 15px 0;
-    padding: 0;
-
+    width: 175px;
 }
 
-/* Блок Истории моих растений */
+.button_form input {
+    color: darkolivegreen;
+}
+
+
+
+/* Страница Истории моих растений */
 
 .header_history {
     padding-top: 150px;
@@ -660,8 +667,10 @@ h1,h2,h3,h4,h5,h6 {
 .my_history {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .figure {
-    margin-top: 40px;
+    margin: 0;
+    padding: 5px;
 }
