@@ -303,13 +303,15 @@ h1,h2,h3,h4,h5,h6 {
     position: absolute;
     left: 0;
     bottom: 75%;
-    width: 100%;
+    width: 98%;
 
-    font-size: 18px;
+    font-size: 15px;
     font-weight: lighter;
-    letter-spacing: 3px;
-    padding: 12px;
-
+    letter-spacing: 2px;
+    padding: 8px;
+    border: 2px dashed white;
+    margin: 5px;
+    text-align: center;
 }
 
 
@@ -631,17 +633,28 @@ h1,h2,h3,h4,h5,h6 {
 .history {
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
 }
 
 .history_item {
     margin: 0 auto;
     padding: 0 0 50px;
-    width: 40%;
+    width: 50%;
+}
+
+.history_image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.history_image img {
+    display: block;
 }
 
 .history_header {
     font-family: 'Nothing You Could Do', cursive;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     text-align: center;
 }
@@ -673,4 +686,13 @@ h1,h2,h3,h4,h5,h6 {
 .figure {
     margin: 0;
     padding: 5px;
+}
+
+.figcaphion {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 40px 0;
 }
