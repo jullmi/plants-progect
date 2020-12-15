@@ -287,32 +287,37 @@ h1,h2,h3,h4,h5,h6 {
 .hello {
     display: flex;
     justify-content: space-between;
-    text-align: center;
 
 }
 
 
 .hello_item {
     width: 33%;
+    margin: 0 auto;
+}
+
+
+
+
+.hello_item h3 {
+    color:black;
+    width: 430px;
+
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hello_img {
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
 
-.hello_item h3 {
-    color: white;
-    position: absolute;
-    left: 0;
-    bottom: 75%;
-    width: 98%;
-
-    font-size: 15px;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    padding: 8px;
-    border: 2px dashed white;
-    margin: 5px;
-    text-align: center;
-}
 
 
 /*Instagram*/
@@ -669,14 +674,12 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-.my_history_header {
-    text-align: center;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 1.6;
+.history_text {
+    padding-left: 60px;
+    text-indent: 70px;
+    text-align: justify;
+
 }
-
-
 .my_history {
     display: flex;
     justify-content: space-between;
@@ -695,4 +698,29 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 
     padding: 40px 0;
+}
+
+
+/* Страница Статьи*/
+
+.articls {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articl:nth-child(odd) {
+    width: 33%;
+}
+
+.articl:nth-child(2) {
+    width: 10%;
+}
+
+.articl_title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: xx-large;
+    padding-top: 120px;
+    text-align: center;
 }
