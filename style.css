@@ -4,7 +4,7 @@ body {
     color: black;
     line-height: 1.6;
     margin: 0;
-    background: whitesmoke;
+    background: rgba(180,171,153,0.44);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -55,6 +55,7 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     padding-right: 30px;
     padding-left: 30px;
+
 }
 
 /*Стиль для логотипа*/
@@ -675,7 +676,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .history_text {
-    padding-left: 60px;
+    padding-left: 80px;
+    padding-right: 40px;
     text-indent: 70px;
     text-align: justify;
 
@@ -688,8 +690,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .figure {
     margin: 0;
-    padding: 5px;
+    padding: 1px;
 }
+
+
 
 .figcaphion {
     font-family: 'Nothing You Could Do', cursive;
@@ -697,8 +701,10 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     text-align: center;
 
-    padding: 40px 0;
+    padding: 58px 0;
 }
+
+
 
 
 /* Страница Статьи*/
