@@ -1,5 +1,4 @@
 # plants-progect
-This site about home plants
 
-Hello world!
+Это мой первый проект для тренировки свойств css и разметки html и простого JS.
 
