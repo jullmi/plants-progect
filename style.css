@@ -769,7 +769,9 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .connection_text {
-    background-color: white;
+    text-align: center;
+    margin: 20px auto;
+    font-weight: bold;
 }
 
 
