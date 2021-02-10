@@ -91,6 +91,9 @@ h1,h2,h3,h4,h5,h6 {
 .nav_link:hover {
     color: #311914;
 }
+.nav_link:visited {
+    color: #311914;
+}
 /*Блок вступления (intro)*/
 .intro {
     background: url("images/home.jpg")center no-repeat;
@@ -612,6 +615,12 @@ figure img {
     position: relative;
     margin: 40px 30px;
     text-decoration: none;
+}
+.nav_link_feedback:hover {
+    color: #311914;
+}
+.nav_link_feedback:visited {
+    color: #311914;
 }
 .menu {
     display: none;

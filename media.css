@@ -14,17 +14,20 @@
     }
     .write_image {
         width: 90%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .hello_img img {
         width: 90%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .contact_form {
         height: 56vh;
     }
     .connection_picture {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .connection_img {
         width: 100%;
@@ -50,7 +53,8 @@
     }
     .live_image img {
         width: 99%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .live {
         margin-bottom: 35px;
@@ -119,7 +123,8 @@
         margin-bottom: 30px;
     }
     .about_img img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 90%;
     }
     .about_header {
@@ -137,7 +142,8 @@
         font-size: 15px;
     }
     .history_image img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 90%;
     }
     .history_text p {
@@ -149,7 +155,8 @@
         font-size: 16px;
     }
     .figure img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 90%;
     }
     .my_text {
@@ -203,7 +210,8 @@
     }
     .instagram_image {
         width: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         margin: 0 auto;
         text-align: center;
     }
@@ -233,7 +241,8 @@
     }
     .about_img img {
         width: 70%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .about_paragraph {
         padding: 5px  5px 5px 50px;
@@ -247,7 +256,8 @@
         width: 100%;
     }
     .history_image img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 60%;
     }
     .history_header {
@@ -320,7 +330,8 @@
         padding: 20px 10px;
     }
     .write_image img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         height: 50%;
         padding: 20px;
     }
@@ -346,7 +357,8 @@
     }
     .hello_img img{
         height: 50%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         padding: 20px;
     }
     .instagram {
@@ -422,7 +434,8 @@
     }
     figure img {
         padding: 0;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         width: 97%;
     }
     .header_form h2 {
