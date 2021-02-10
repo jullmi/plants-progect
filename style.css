@@ -6,38 +6,24 @@ body {
     margin: 0;
     background:white;
 }
-
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
-
-/* Адаптивная верстка - сетка */
-
-
-
-
-/* Звездочка означает все элементы страницы, before и after это псевдоэлементы чтобы вставить текст перед или после элемента*/
 *,
 ::before,
 ::after{
     box-sizing: border-box;
 }
-
 /* Стилизация шапки header*/
 .header{
     width: 100%;
-
 }
-
 /*container*/
 .container {
     width: 1440px;
     margin: 0 auto;
 }
-
-
 /*Первая страница*/
-
 /*Стиль для верхнего блока с навигацией*/
 .header {
     width: 100%;
@@ -48,7 +34,6 @@ h1,h2,h3,h4,h5,h6 {
     right: 0;
     z-index: 1000;
 }
-
 .header_inner{
     display: flex;
     justify-content: space-between;
@@ -61,9 +46,7 @@ h1,h2,h3,h4,h5,h6 {
     background-color: white;
     width: 100%;
     height: 100px;
-
 }
-
 /*Стиль для логотипа*/
 .header_logo {
     font-size: 40px;
@@ -71,7 +54,6 @@ h1,h2,h3,h4,h5,h6 {
     color: #311914;
     font-family: 'Nothing You Could Do', cursive;
     text-decoration: none;
-
 }
 /*Стиль для блока с навигацией*/
 .nav {
@@ -80,7 +62,6 @@ h1,h2,h3,h4,h5,h6 {
     color: black;
     text-transform: lowercase;
 }
-
 /*Стиль для ссылок навигации*/
 .nav_link {
     display: inline-block;
@@ -89,10 +70,8 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 15px;
     color: #311914;
     text-decoration: none;
-
     transition: color .1s linear;
 }
-
 /*Подчеркивание навигационного меню*/
 .nav_link::after{
     display: block;
@@ -102,29 +81,23 @@ h1,h2,h3,h4,h5,h6 {
     height: 2px;
     background-color: darkolivegreen;
     opacity: 0;
-
     transition: opacity .1s linear;
 }
-
 .nav_link:hover::after{
     color: #311914;
     opacity: 1;
 }
-
 /*Смена цвета ссылок*/
 .nav_link:hover {
     color: #311914;
 }
-
 /*Блок вступления (intro)*/
 .intro {
     background: url("images/home.jpg")center no-repeat;
     width: 100%;
     margin-top: 100px;
     height: 59vh;
-    background-attachment: fixed;
 }
-
 .intro_text {
     font-size: 20px;
     font-weight: normal;
@@ -134,38 +107,28 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 50vh;
     padding-right: 10vh;
 }
-
-
 /*Section*/
-
 .section {
     padding: 80px 0 0;
-
 }
 .section_header {
     width: 100%;
     max-width: 950px;
     margin: 0 auto 40px;
     text-align: center;
-
 }
-
 .section_suptitle {
     font-size: 30px;
     font-weight: bold;
     color: #311914;
     font-family: 'Nothing You Could Do', cursive;
     margin: 0 auto;
-
 }
-
 .section_title {
     font-size: 30px;
     font-weight: bold;
     color: #311914;
-
 }
-
 .section_title::after {
     content: "";
     display: block;
@@ -173,78 +136,54 @@ h1,h2,h3,h4,h5,h6 {
     height: 3px;
     background-color: #311914;
     margin: 30px auto;
-
 }
-
 .section_text {
     color: #311914;
 }
-
-
 /*Write*/
-
 .write {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-
 .write_item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .write_image {
     display: block;
 }
-
-
 .write_item:hover {
     transform: translate3d(-10px, -10px, 0);
 }
-
 .write_item {
     transition: transform .2s linear;
 }
-
 .write_image:hover{
     opacity: .6;
 }
-
 /* Tell*/
-
 .section_tell {
     background-color: white;
 }
-
-
-
 .tell_blok {
     width: 100%;
     height: 65vh;
     background: url("images/tell/tell.jpg");
-
     text-align: center;
-
 }
-
-
 .tell_button {
     display: inline-block;
     vertical-align: top;
     position: relative;
-
     font-size: 30px;
     font-weight: bold;
     font-family: 'Nothing You Could Do', cursive;
     color: #311914;
     text-decoration: none;
     margin-top: 350px;
-
-
 }
-
 .tell_button::after {
     position: relative;
     display: block;
@@ -253,74 +192,46 @@ h1,h2,h3,h4,h5,h6 {
     height: 3px;
     background-color: white;
     margin-top: 0;
-
     opacity: 0;
-
     transition: opacity .3s linear, color .3s linear;
-
 }
-
-
 .tell_button:hover {
     color: white;
 }
-
 .tell_button:hover::after {
     opacity: 1;
-
 }
-
 /*Live*/
-
 .live {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
 }
-
 .live_image {
-    width: 50%;
     opacity: 1;
     padding: 0 40px;
-
-
     transition: .3s linear;
 }
-
 .live_image:hover {
     opacity: .6;
     transform: scale(1.1);
 }
-
-
-
 /*Hello*/
-
 .section_hello {
     background-color: white;
 }
-
-
 .hello {
     display: flex;
     justify-content: space-between;
-
 }
-
-
 .hello_item {
     width: 33%;
     margin: 0 auto;
 }
-
-
-
-
 .hello_item h3 {
     color:black;
     width: 430px;
-
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -328,49 +239,32 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
     text-align: center;
 }
-
 .hello_img {
     display: flex;
     justify-content: center;
     position: relative;
 }
-
-
-
-
 /*Instagram*/
-
-
 .instagram {
     display: flex;
     text-decoration: none;
-    margin: 80px 0px;
+    margin: 80px 0;
     background-color: white;
-
 }
-
-
 .instagram_item {
     width: 50%;
     text-align: center;
 }
-
 .link {
     text-decoration: none;
 }
-
-
 .instagram_image {
     opacity: 1;
-
     transition: opacity .3s linear;
 }
-
-
 .instagram_image:hover {
     opacity: .6;
 }
-
 .instagram_title {
     font-size: 30px;
     font-family: 'Nothing You Could Do', cursive;
@@ -379,50 +273,33 @@ h1,h2,h3,h4,h5,h6 {
     padding: 140px 0 0;
     margin: 0 auto;
 }
-
-
 .instagram_text {
     font-size: 17px;
     padding: 12px;
 }
-
 .icon_inst {
     padding: 15px;
     opacity: 1;
-
     transition: opacity .3s linear;
 }
-
 .icon_youtube {
     padding: 15px;
     opacity: 1;
-
     transition: opacity .3s linear;
-
 }
-
 .icon_inst:hover {
     opacity: .6;
 }
-
 .icon_youtube:hover {
     opacity: .6;
 }
-
-
-
-
-
 /*Вторая Страница - О проекте!!!!!!*/
-
 .about {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
-
 }
-
 .about_before {
     border: none;
     width: 100%;
@@ -430,11 +307,7 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darkolivegreen;
     margin-top: 100px;
     opacity: 0.5;
-
-
-
 }
-
 .about_header {
     font-family: 'Nothing You Could Do', cursive;
     font-size: xx-large;
@@ -442,69 +315,49 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     margin: 40px;
 }
-
-
-
 .about_paragraph {
-    text-indent: 0%;
+    text-indent: 0;
     display: inline-block;
     text-align: left;
-
 }
-
-
-
 .about_item {
     width: 50%;
 }
-
 .about_item:first-child {
     padding-top: 40px;
 }
-
 .about_img {
     display: flex;
     justify-content: center;
 }
-
-
 .about_img img {
     display: block;
 }
-
-
 .about_text {
     padding-right: 60px;
     display: inline-block;
     text-align: center;
     text-indent: 0;
-
 }
-
-
 .about_title {
     font-size: medium;
     font-weight: bold;
     margin-top: 40px;
     text-align: center;
 }
-
 .about_progects {
     display: block;
     width: 100%;
 }
-
 .about_text_progects {
     display: inline-block;
     text-indent: 0;
     width: 100%;
     padding-left: 105px;
 }
-
 .section_footer {
     background-color: white;
 }
-
 .section_footer::before {
     display: block;
     content: "";
@@ -514,193 +367,138 @@ h1,h2,h3,h4,h5,h6 {
     height: 2px;
     margin: 40px auto;
 }
-
-
 .footer_text {
     text-align: center;
     font-size: 12px;
     margin-bottom: 20px;
-
 }
-
 .footer_icon {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
 /*Вторая страница подчеркивание ссылок!!!!!*/
-
 .instagram_link {
     text-decoration: none;
     color: darkolivegreen;
     font-weight: bold;
 }
-
-
 .youtube_link {
     text-decoration: none;
     color: darkolivegreen;
     font-weight: bold;
 }
-
-
-
-
-
-
 /* Страница Истории моих растений */
-
-
 .header_history {
     padding-top: 150px;
     margin: 0 auto;
     text-align: center;
 }
-
-
-
-
 .history {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
 }
-
 .history_item {
     margin: 0 auto;
     padding: 0 0 50px;
     width: 50%;
 }
-
 .history_image {
     display: flex;
     justify-content: center;
     text-align: center;
 }
-
 .history_image img {
     display: block;
 }
-
 .history_header {
     font-family: 'Nothing You Could Do', cursive;
     font-size: xx-large;
     font-weight: bold;
     text-align: center;
-
+    padding: 30px 0;
 }
-
-
-
-.history_header::after {
-    display: block;
-    content:"";
-    height: 2px;
-    width: 100%;
-    margin:0;
-    background-color: darkolivegreen;
-
-}
-
-
 .history_text {
     padding-left: 80px;
     padding-right: 40px;
     text-indent: 70px;
     text-align: justify;
-
 }
-
-
+.my_history_text {
+    padding: 140px 50px 140px 0;
+}
 .my_history_text_2 {
     padding-left: 60px;
     padding-right: 40px;
     text-align: justify;
-
     padding-bottom: 40px;
 }
-
 .my_history_text_2 h5 {
     text-align: center;
     font-size: 20px;
 }
-
 .history_text_italic {
     text-align: center;
     padding-right: 100px;
     font-style: italic;
     font-weight: bold;
-
 }
-
 .history_quote {
-    background: url("images/home.jpg") center no-repeat;
-    height: 60vh;
+    background: url("images/history/history_2.jpg") center no-repeat;
+    height: 55vh;
     color: white;
     text-align: center;
     padding-top: 60px;
+    text-shadow: 2px 2px dimgray;
 }
-
+.history_insert {
+    background: url("images/history/history_5.jpg") center no-repeat;
+    height: 55vh;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    text-shadow: 2px 2px black;
+}
 .my_history {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-
-
 }
-
+.my_text {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+}
 .my_history_item {
     display: block;
     width: 50%;
 }
-
-.my_history_text{
-    padding-top: 80px;
-}
-
 .history_paragraph {
     text-align: center;
 }
-
-
-
-
 .figure {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 1px;
-
 }
-
 .figure img {
     margin: 0 auto;
 }
-
-
-
-
 .figcaption {
     font-size: 23px;
     font-weight: bold;
     text-align: center;
-
-    padding: 0 0 20px;
+    padding: 0;
 }
-
-
-
-
-
-
+.figcaption img {
+    padding: 0;
+}
 /* Страница Статьи*/
-
 .articls {
     padding-top: 30px;
-
 }
-
 .articl_title {
     display: inline-block;
     font-family: 'Nothing You Could Do', cursive;
@@ -709,7 +507,6 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     width: 100%;
 }
-
 .articl_title::after {
     content: "";
     display: block;
@@ -717,103 +514,72 @@ h1,h2,h3,h4,h5,h6 {
     height: 2px;
     background-color: darkolivegreen;
 }
-
-
 .articl_header_text {
     text-align: center;
     padding: 0 50px;
 }
-
 .articl_text {
-    padding-right: 40px;
+    padding:0 40px;
     text-align: justify;
-
 }
-
 .float {
     float: left;
     margin: 0 40px 0 0;
-    text-em;
 }
-
-
-
+figure img {
+    padding-top: 70px;
+}
 /* Страница сconnection*/
-
-
 .connection {
     background-color: rgba(85,86,8,0.44);
 }
-
 .connection_title {
     padding-top: 10px;
     margin: 0 auto;
     text-align: center;
 }
-
 .connection_header {
     font-family: 'Nothing You Could Do', cursive;
     font-size: xx-large;
     font-weight: bold;
     text-align: center;
     margin: 20px;
-
 }
-
 .connection_picture{
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
-    padding-top: 0px;
+    padding-top: 0;
 }
-
-
 .connection_text {
     text-align: center;
     margin: 20px auto;
     font-weight: bold;
 }
-
-
 .feedback {
     margin: 0 auto;
 }
-
-
-
-
-
-
 /* Форма обратной связзи */
-
 .contact_form {
     background: url("images/connection/feedback.jpg") center no-repeat;
     height: 70vh;
 }
-
 .contact_form form {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 0;
-
 }
-
-
 .header_form {
     padding-top: 10%;
 }
-
 .header_form  h2{
     font-size: 30px;
     color: white;
     text-align: center;
     font-weight: 200;
     margin: 0;
-
-
 }
-
 .header_form p {
     font-size: 20px;
     color: white;
@@ -821,8 +587,6 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 200;
     margin: 5px auto;
 }
-
-
 .text_form {
     width: 35%;
     height: 45px;
@@ -830,34 +594,25 @@ h1,h2,h3,h4,h5,h6 {
     font-size: medium;
     border-radius: 1px 0 0 3px;
     color: rgba(8,6,6,0.60);
-
 }
-
 .button_form {
     height: 45px;
     border: none;
     font-size: medium;
     border-radius: 1px 0 0 1px;
-
     color: rgba(8,6,6,0.60);
-
 }
-
-
-
 .nav_feedback {
     display: flex;
     justify-content: center;
     background-color: white;
-
 }
-
 .nav_link_feedback {
     display: inline-block;
     position: relative;
     margin: 40px 30px;
-    color: #311914;
-
     text-decoration: none;
-
+}
+.menu {
+    display: none;
 }

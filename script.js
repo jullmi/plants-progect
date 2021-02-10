@@ -1,20 +1,10 @@
-// // index
 
-const headerFeedback = document.querySelectorAll(".nav_link_feedback")
-console.log(headerFeedback)
-
-headerFeedback.addEventListener ('click', () => {
-if (headerFeedback === '#311914') {
-    headerFeedback = 'red'
-} else {headerFeedback === 'red'
-    headerFeedback = 'blue'
-        }
-
-}
-)
-
-
-
+const menu = document.querySelector('.menu');
+menu.addEventListener('click', () => {
+    const nav = document.querySelector('nav')
+    nav.classList.toggle('nav_active')
+    menu.classList.toggle('menu_active')
+})
 
 
 
